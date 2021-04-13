@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://www.arm.com/blogs/blueprint/wp-content/uploads/2019/11/glowingheads.jpg');
+  background-size: cover;
+}
+
+#webcam {
+  position: absolute;
+}
+
+#canvas {
+  opacity: 80%;
+  z-index: 1;
+}
+
+#webcam-border {
+  display: flex;
+  padding: 30px;
+  background: linear-gradient(
+    -90deg,
+    #0592cad7 0%,
+    #31afe0d7 35%,
+    #ac7834d7 65%,
+    #fab04fd7 100%
+  );
+  border-radius: 50px;
+  max-height: 490px;
+  max-width: 640px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  border-bottom: solid 1px black;
+  background: linear-gradient(
+    -90deg,
+    #ca7505d7 0%,
+    #e69021d7 35%,
+    #fab04fd7 100%
+  );
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00477b;
+  color: white;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: solid 1px black;
+  background: linear-gradient(
+    90deg,
+    #ca7505d7 0%,
+    #e69021d7 35%,
+    #fab04fd7 100%
+  );
+}
+
+.navlink {
+  font-weight: bold;
+  text-decoration: none;
+  margin: 10px;
+  color: white;
+}
+
+.model-button {
+  background-color: rgb(255, 123, 0);
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 15px;
+  border: outset 5px gray;
+}
+
+#main-wrapper {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+
+#model-header {
+  text-align: center;
+  padding: 5px;
+  background: linear-gradient(
+    90deg,
+    #ca7505d7 0%,
+    #e69021d7 35%,
+    #fab04fd7 100%
+  );
+  border-radius: 0px 50px 75px 0px;
+  max-width: 20vw;
+  border-left: inset 25px rgb(201, 89, 15);
+}
+
+#model-text {
+  margin: 5px;
+}
+
+#color-options {
+  background-color: #fab04fd7;
+  padding: 5px;
+  border: outset 10px lightgray;
+  border-radius: 50px 50px 50px 50px;
+}
+
+#color-option-text {
+  margin: 5px;
+}
+.button-css {
+  width: 100px;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 15px;
+  border: outset 5px gray;
+  margin: 3px;
+}
+
+.stop-button {
+  background-color: rgb(247, 49, 0);
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 15px;
+  border: outset 5px gray;
+}
+
+.start-button {
+  background-color: rgb(32, 194, 0);
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 15px;
+  border: outset 5px gray;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+
+.yellow {
+  background-color: yellow;
+  color: black;
+}
+
+.blue {
+  background-color: blue;
+  color: white;
+}
+
+.cyan {
+  background-color: cyan;
+  color: black;
+}
+
+.button-css:hover {
+  border: outset 5px gray;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.disabled {
+  background-color: gray;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mesh-text {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.warning {
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  border: outset 10px rgb(201, 89, 15);
+  padding: 25px;
+  background: linear-gradient(
+    -90deg,
+    #0592cad7 0%,
+    #31afe0d7 35%,
+    #ac7834d7 65%,
+    #fab04fd7 100%
+  );
+  font-weight: bold;
+}

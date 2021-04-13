@@ -1,6 +1,6 @@
 # TSFlex
 
-A flexible playground that allows users to interact with different TensorFlow machine learning models - on a single website**. The app utilizes TensorFlow machine learning models in combination with React-webcam to detect objects and faces. Once detected, JavaScript and HTML canvas are used to create renderings of the detections to the user.
+A flexible playground that allows users to interact with different TensorFlow machine learning models - on a single website**. The app utilizes TensorFlow machine learning models in combination with React-webcam to detect objects and faces. Once detected, JavaScript and HTML canvas are used to create renderings of the detections to the user. React state is used to enable the user to start, stop and switch between models.
 
 ** As of April 2021, there are two models integrated with plans to add more.
 

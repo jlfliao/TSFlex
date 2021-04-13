@@ -18,11 +18,11 @@ const Navbar = () => {
               Models
             </a>
           </span>
-          <span>
-            {/* <a href='https://www.tensorflow.org/js/models' className='navlink'> */}
+          {/* <span>
+            <a href='https://www.tensorflow.org/js/models' className='navlink'>
             About (Coming Soon)
-            {/* </a> */}
-          </span>
+            </a>
+          </span> */}
         </span>
       </nav>
     </div>
